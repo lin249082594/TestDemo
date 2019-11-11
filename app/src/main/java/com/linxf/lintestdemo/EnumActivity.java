@@ -19,7 +19,7 @@ public class EnumActivity extends BaseActivity {
     @Override
     public void initData() {
 
-
+        LogUtil.error("测试");
 
     }
 }
