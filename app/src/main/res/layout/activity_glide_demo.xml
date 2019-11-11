@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="glideDemoEntity" type="com.linxf.lintestdemo.uentity.GlideDemoEntity"/>
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/textStr1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{glideDemoEntity.textStr1}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/iamgeView1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintLeft_toRightOf="@id/textStr1"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="30dp"
+            />
+
+        <TextView
+            android:id="@+id/textStr2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{glideDemoEntity.textStr2}"
+            app:layout_constraintLeft_toRightOf="@id/iamgeView1"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="30dp"
+            />
+
+        <ImageView
+            android:id="@+id/iamgeView2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintLeft_toRightOf="@id/textStr2"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="30dp"
+            android:scaleType="centerCrop"
+            />
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iamgeView2"
+            android:orientation="horizontal"
+            android:paddingTop="30dp"
+            >
+            <TextView
+                android:id="@+id/textStr3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{glideDemoEntity.textStr3}"
+
+                />
+            <ImageView
+                android:id="@+id/iamgeView3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:layout_marginLeft="30dp"
+
+                />
+            <ImageView
+                android:id="@+id/iamgeView4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:layout_marginLeft="10dp"
+
+                />
+            <ImageView
+                android:id="@+id/iamgeView5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:layout_marginLeft="10dp"
+
+                />
+            <ImageView
+                android:id="@+id/iamgeView6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:layout_marginLeft="10dp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout3"
+            android:orientation="horizontal"
+            android:paddingTop="30dp"
+            >
+            <TextView
+                android:id="@+id/textStr4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{glideDemoEntity.textStr4}"
+
+                />
+            <ImageView
+                android:id="@+id/iamgeView7"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:layout_marginLeft="30dp"
+
+                />
+            <ImageView
+                android:id="@+id/iamgeView8"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:layout_marginLeft="30dp"
+
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textStr5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{glideDemoEntity.textStr5}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout4"
+            />
+        <ImageView
+            android:id="@+id/iamgeView9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:layout_marginLeft="30dp"
+            app:layout_constraintLeft_toRightOf="@id/textStr5"
+            app:layout_constraintTop_toBottomOf="@id/layout4"
+
+            />
+        <ImageView
+            android:id="@+id/iamgeView10"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:layout_marginLeft="10dp"
+            app:layout_constraintLeft_toRightOf="@id/iamgeView9"
+            app:layout_constraintTop_toBottomOf="@id/layout4"
+            android:scaleType="centerCrop"
+            />
+    </android.support.constraint.ConstraintLayout>
+</layout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="c_999999">#999999</color>
+    <color name="c_cccccc">#cccccc</color>
+    <color name="c_333333">#333333</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#111111</color>
+    <color name="white_50">#4DEBEBEB</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="c_c1d2f0">#c1d2f0</color>
+    <color name="c_63B8FF">#63B8FF</color>
+    <color name="c_FFB5C5">#FFB5C5</color>
+
+    <color name="date_picker_bg">#FFFFFF</color>
+    <color name="date_picker_divider">#11112233</color>
+    <color name="date_picker_text_light">#59B29C</color>
+    <color name="date_picker_text_dark">#333333</color>
+
+</resources>

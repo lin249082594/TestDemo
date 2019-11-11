@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/subtab_1"
+        android:icon="@drawable/ic_sub_menu_1_24dp"
+        android:title="@string/sub_tab_1"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/subtab_2"
+        android:icon="@drawable/ic_sub_tab_2_24dp"
+        android:title="@string/sub_tab_2"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/subtab_3"
+        android:icon="@drawable/ic_sub_tab_3_24dp"
+        android:title="@string/sub_tab_3"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        />
+</menu>

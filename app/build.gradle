@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+//apply plugin:'me.tatarka.retrolambda'
+apply plugin: 'org.greenrobot.greendao'
+android {
+    compileSdkVersion 27
+    buildToolsVersion "28.0.2"
+    defaultConfig {
+        applicationId "com.linxf.lintestdemo"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        //********注意这里**********
+//        javaCompileOptions {
+//            annotationProcessorOptions {
+//                arguments = ["room.schemaLocation": "$projectDir/schemas".toString()]
+//                //*************************
+//            }
+//        }
+//        jackOptions {
+//            enabled true
+//        }
+    }
+    signingConfigs {
+        debug {
+            v1SigningEnabled true
+            v2SigningEnabled true
+
+
+        }
+        release {
+            v1SigningEnabled true
+            v2SigningEnabled true
+
+            storeFile file('D:/androidworkspace/oher/LinTestDemo/lintest.jks')
+            storePassword '123456'
+            keyAlias 'key0'
+            keyPassword '123456'
+
+
+        }
+    }
+    buildTypes {
+        release {
+            println 'mmmm1'
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+
+        debug {
+            println 'mmmm2'
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+    compileOptions{
+        sourceCompatibility org.gradle.api.JavaVersion.VERSION_1_8
+        targetCompatibility org.gradle.api.JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    api project(':base')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    api 'com.android.support:appcompat-v7:27+'
+
+    testImplementation 'junit:junit:4.12'
+
+
+}

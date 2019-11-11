@@ -1,0 +1,122 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "28.0.3"
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        repositories {
+            maven { url 'https://maven.google.com' }
+        }
+
+    }
+    dataBinding {
+        enabled = true
+    }
+
+}
+
+dependencies {
+
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    testImplementation 'junit:junit:4.12'
+    api 'com.android.support:appcompat-v7:27.1.1'
+    api 'com.android.support:design:27.1.1'
+    api 'com.android.support:support-v4:27.1.1'
+    // 网络请求
+    api 'com.squareup.okhttp3:okhttp:3.8.1'
+    api 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+    // Retrofit库
+    //Retrofit2
+    api 'com.squareup.retrofit2:retrofit:2.3.0'
+    api 'com.squareup.retrofit2:converter-gson:2.3.0'
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    api 'com.squareup.okhttp3:okhttp-urlconnection:3.2.0'//JavaNetCookieJar来实现非持久化cookie
+
+    // fastjson
+    api 'com.alibaba:fastjson:1.1.70.android'
+
+    api ('com.android.support.constraint:constraint-layout:1.1.2')
+
+    //图片
+    api  'com.github.bumptech.glide:glide:4.6.1'
+
+//    api files( 'libs/glide-full-4.6.0.jar')
+
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
+
+//annotationProcessor
+
+
+    //上拉刷新
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.5.1'
+
+    // Tab 标签
+    api 'com.github.hackware1993:MagicIndicator:1.5.0'
+
+    //小圆点
+    api 'q.rorbin:badgeview:1.1.2'
+
+    //轮播图
+    api 'com.xhb:xbanner:1.5.1'
+
+    // cardview
+    api 'com.android.support:cardview-v7:27+'
+
+    // 申请权限
+//    compile 'com.lovedise:permissiongen:0.0.6'
+    api 'com.github.tbruyelle:rxpermissions:0.10.2'
+
+    // rxjava
+    api 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    api 'io.reactivex.rxjava2:rxjava:2.1.6'
+
+    //传递数据
+//    compile 'com.hwangjr.rxbus:rxbus:1.0.6'
+
+    //rxbinding
+//    compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+//    compile 'com.jakewharton.rxbinding:rxbinding-support-v4:0.4.0'
+//    compile 'com.jakewharton.rxbinding:rxbinding-appcompat-v7:0.4.0'
+//    compile 'com.jakewharton.rxbinding:rxbinding-design:0.4.0'
+//    compile 'com.jakewharton.rxbinding:rxbinding-recyclerview-v7:0.4.0'
+//    compile 'com.jakewharton.rxbinding:rxbinding-leanback-v17:0.4.0'
+
+    // dagger2
+    api 'com.google.dagger:dagger:2.14.1'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.14.1'
+
+    //RxLifeCycle2
+    api 'com.trello.rxlifecycle2:rxlifecycle:2.2.1'
+    api 'com.trello.rxlifecycle2:rxlifecycle-android:2.2.1@aar'
+
+    //greenDAO数据库
+    api 'org.greenrobot:greendao:3.2.0'
+
+    api 'android.arch.lifecycle:extensions:+'
+
+    //room数据库
+    api "android.arch.persistence.room:runtime:+"
+    annotationProcessor "android.arch.persistence.room:compiler:+"
+}

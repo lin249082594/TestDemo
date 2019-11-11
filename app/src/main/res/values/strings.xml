@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LinTestDemo</string>
+
+    <!-- tab -->
+    <string name="tab_home">界面</string>
+    <string name="tab_widget">控件</string>
+    <string name="tab_case">案例</string>
+
+    <string name="sub_tab_1">refreshFragment</string>
+    <string name="sub_tab_2">permissionFragment</string>
+    <string name="sub_tab_3">子页面3</string>
+
+</resources>

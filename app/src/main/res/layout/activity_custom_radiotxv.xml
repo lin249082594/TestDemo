@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.linxf.base.widget.CustomRadioTxV
+        android:id="@+id/radioTxV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:textSize="15sp"
+        app:unselectedColor="@color/c_FFB5C5"
+        app:selectedColor="@color/white"
+        app:selectedleftBg="@drawable/custom_left_selected_bg"
+        app:unselectedleftBg="@drawable/custom_left_unselected_bg"
+        app:selectedrightBg="@drawable/custom_right_selected_bg"
+        app:unselectedrightBg="@drawable/custom_right_unselected_bg"
+        app:selectedcenterBg="@drawable/custom_center_selected_bg"
+        app:unselectedcenterBg="@drawable/custom_center_unselected_bg"
+        ></com.linxf.base.widget.CustomRadioTxV>
+
+
+    <com.linxf.base.widget.CustomRadioTxV
+        android:id="@+id/radio2TxV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:textSize="15sp"
+        app:unselectedColor="@color/c_FFB5C5"
+        app:selectedColor="@color/white"
+        app:selectedleftBg="@drawable/custom_left_selected_bg"
+        app:unselectedleftBg="@drawable/custom_left_unselected_bg"
+        app:selectedrightBg="@drawable/custom_right_selected_bg"
+        app:unselectedrightBg="@drawable/custom_right_unselected_bg"
+
+        ></com.linxf.base.widget.CustomRadioTxV>
+</LinearLayout>

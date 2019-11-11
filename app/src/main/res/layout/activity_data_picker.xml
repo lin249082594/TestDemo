@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data></data>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+       <TextView
+           android:id="@+id/time1TxV"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="选择年月日"
+           app:layout_constraintLeft_toLeftOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           android:onClick="onClick"
+           android:padding="10dp"
+           android:textSize="18sp"
+           android:textColor="@color/c_63B8FF"
+           />
+
+        <TextView
+            android:id="@+id/time1ContentTxV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/time1TxV"
+            app:layout_constraintBaseline_toBaselineOf="@id/time1TxV"
+
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/c_333333"
+            android:layout_marginLeft="10dp"
+            />
+
+
+        <TextView
+            android:id="@+id/time2TxV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择年月日时分秒"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/time1TxV"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/c_63B8FF"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/time2ContentTxV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/time2TxV"
+            app:layout_constraintBaseline_toBaselineOf="@id/time2TxV"
+
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/c_333333"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/time3TxV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择年月"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/time2TxV"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/c_63B8FF"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/time3ContentTxV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/time3TxV"
+            app:layout_constraintBaseline_toBaselineOf="@id/time3TxV"
+
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/c_333333"
+            android:layout_marginLeft="10dp"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

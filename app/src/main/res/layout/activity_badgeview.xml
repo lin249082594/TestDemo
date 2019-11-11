@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="badgeAcEntity" type="com.linxf.lintestdemo.uentity.BadgeAcEntity"/>
+        <variable name="badgeSeEntity" type="com.linxf.lintestdemo.uentity.BadgeSeEntity"/>
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{badgeAcEntity.text1}"
+            android:padding="10dp"
+            android:background="@drawable/flow_drawable_bg"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{badgeAcEntity.text2}"
+            android:padding="10dp"
+            android:background="@drawable/flow_drawable_bg"
+            app:layout_constraintLeft_toRightOf="@id/text1"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="30dp"
+            />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{badgeAcEntity.text3}"
+            android:padding="10dp"
+            android:background="@drawable/flow_drawable_bg"
+            app:layout_constraintLeft_toRightOf="@id/text1"
+            app:layout_constraintTop_toBottomOf="@id/text2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            />
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{badgeAcEntity.text4}"
+            android:padding="10dp"
+            android:background="@drawable/flow_drawable_bg"
+            app:layout_constraintLeft_toRightOf="@id/text3"
+            app:layout_constraintTop_toBottomOf="@id/text2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            />
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{badgeAcEntity.text5}"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/flow_drawable_bg"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text4"
+            android:layout_marginTop="30dp"
+            android:onClick="@{(theview) -> badgeAcEntity.onChangeClick(theview) }"
+            android:gravity="center"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/c_333333"
+        android:text="通过工具检测,注意相关写法"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/c_333333"
+        android:layout_marginTop="10dp"
+        android:text="相信参见:https://www.jianshu.com/p/65f914e6a2f8\nhttps://blog.csdn.net/u012482178/article/details/78988176"
+        />
+
+</LinearLayout>

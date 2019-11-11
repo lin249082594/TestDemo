@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomRadioTxV">
+        <attr name="unselectedColor" format="color"/>
+        <attr name="selectedColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="textPaddingLeft" format="dimension"/>
+        <attr name="textPaddingTop" format="dimension"/>
+        <attr name="cornerRound" format="boolean"/>
+        <attr name="unselectedleftBg" format="reference|color"/>
+        <attr name="selectedleftBg" format="reference|color"/>
+        <attr name="unselectedrightBg" format="reference|color"/>
+        <attr name="selectedrightBg" format="reference|color"/>
+        <attr name="unselectedcenterBg" format="reference|color"/>
+        <attr name="selectedcenterBg" format="reference|color"/>
+    </declare-styleable>
+
+</resources>
