@@ -19,5 +19,7 @@ public class EnumActivity extends BaseActivity {
     @Override
     public void initData() {
 
+
+
     }
 }
