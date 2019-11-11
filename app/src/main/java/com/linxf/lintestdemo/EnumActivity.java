@@ -20,6 +20,6 @@ public class EnumActivity extends BaseActivity {
     public void initData() {
 
         LogUtil.error("测试");
-
+        int i=0;
     }
 }
