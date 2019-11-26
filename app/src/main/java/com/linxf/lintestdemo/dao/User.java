@@ -17,28 +17,28 @@ public class User {
     private Long id;
 //    @Unique
     private String name;
-    private Integer age;
+    private String content;
+
+
+
+    private Integer grade;
 
 
 
 
 
 
-    @Generated(hash = 1499888241)
-    public User(Long id, String name, Integer age) {
+    @Generated(hash = 452524530)
+    public User(Long id, String name, String content, Integer grade) {
         this.id = id;
         this.name = name;
-        this.age = age;
+        this.content = content;
+        this.grade = grade;
     }
 
     @Generated(hash = 586692638)
     public User() {
     }
-
-
-
-
-
 
     public Long getId() {
         return id;
@@ -56,16 +56,26 @@ public class User {
         this.name = name;
     }
 
-    public Integer getAge() {
-        return age;
+    public Integer getGrade() {
+        return grade;
     }
 
-    public void setAge(Integer age) {
-        this.age = age;
+    public void setGrade(Integer grade) {
+        this.grade = grade;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
     }
 
     @Override
     public String toString() {
         return JSON.toJSONString(this);
     }
+
+
 }

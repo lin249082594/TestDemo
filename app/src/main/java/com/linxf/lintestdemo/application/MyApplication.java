@@ -7,8 +7,10 @@ import com.bumptech.glide.request.target.ViewTarget;
 import com.linxf.base.BaseApplication;
 import com.linxf.base.widget.StateLayout;
 import com.linxf.lintestdemo.R;
-import com.linxf.lintestdemo.dao.DaoMaster;
-import com.linxf.lintestdemo.dao.DaoSession;
+import com.linxf.lintestdemo.greendao.gen.DaoMaster;
+import com.linxf.lintestdemo.greendao.gen.DaoSession;
+import com.linxf.lintestdemo.utils.GreenDaoUpgradeHelper;
+
 
 import org.greenrobot.greendao.database.Database;
 
@@ -35,7 +37,7 @@ public class MyApplication extends BaseApplication {
         //glide绑定
         ViewTarget.setTagId(R.id.glide_tag);
 
-        DaoMaster.DevOpenHelper helper = new  DaoMaster.DevOpenHelper(this, ENCRYPTED ? "users-db-encrypted" : "users-db");
+        GreenDaoUpgradeHelper helper = new GreenDaoUpgradeHelper(this, ENCRYPTED ? "users-db-encrypted" : "users-db",null);
         Database db =  helper.getWritableDb();
         daoSession = new DaoMaster(db).newSession();
     }

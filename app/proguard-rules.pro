@@ -153,6 +153,7 @@
 
 -keep class com.linxf.lintestdemo.dagger.**{*;}
 -keep class com.linxf.lintestdemo.entity.**{*;}
+-keep class com.linxf.lintestdemo.dao.**{*;}
 ####################### base ############################
 # greenDAO开始
 -keep class org.greenrobot.greendao.**{*;}

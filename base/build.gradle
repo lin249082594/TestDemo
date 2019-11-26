@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.testdemo'
 android {
     compileSdkVersion 27
     buildToolsVersion "28.0.3"
@@ -113,6 +114,8 @@ dependencies {
 
     //greenDAO数据库
     api 'org.greenrobot:greendao:3.2.0'
+
+    api 'com.github.yuweiguocn:GreenDaoUpgradeHelper:v2.0.0'
 
     api 'android.arch.lifecycle:extensions:+'
 
