@@ -5,6 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 
 import com.bumptech.glide.request.target.ViewTarget;
 import com.linxf.base.BaseApplication;
+import com.linxf.base.utils.LogUtil;
 import com.linxf.base.widget.StateLayout;
 import com.linxf.lintestdemo.R;
 import com.linxf.lintestdemo.greendao.gen.DaoMaster;
@@ -40,6 +41,8 @@ public class MyApplication extends BaseApplication {
         GreenDaoUpgradeHelper helper = new GreenDaoUpgradeHelper(this, ENCRYPTED ? "users-db-encrypted" : "users-db",null);
         Database db =  helper.getWritableDb();
         daoSession = new DaoMaster(db).newSession();
+
+        LogUtil.error("ccc");
     }
 
     public DaoSession getDaoSession() {
